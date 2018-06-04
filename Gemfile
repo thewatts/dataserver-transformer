@@ -13,6 +13,7 @@ gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
 gem 'versionist'
 gem 'xeroizer'
+
 group :development do
   gem 'better_errors'
   gem 'foreman'
@@ -25,7 +26,10 @@ group :development do
   gem 'rb-fsevent', require: false
   gem 'rb-inotify', require: false
   gem 'spring-commands-rspec'
+
+  gem "rubocop", "~> 0.56.0"
 end
+
 group :development, :test do
   gem 'awesome_print'
   gem 'binding_of_caller'
@@ -36,8 +40,8 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-rescue'
   gem 'rspec-rails'
-  gem 'rubocop'
 end
+
 group :test do
   gem 'database_cleaner'
   gem 'launchy'
